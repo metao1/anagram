@@ -14,6 +14,7 @@ We sort the characters in each string and compare the sorted strings.
 Pros: 
 - Supports all type of input character sets, beside word.
 - Space efficient as complexity is O(1).
+
 Cons:
 - It is not very efficient because sorting complexity is O(n log n).
 
@@ -22,6 +23,7 @@ We use hash table to count the number of occurrences of each character in each s
 Pros:
 - Supports all type of input character sets, beside word.
 - It is much efficient compared to sorting approach.
+
 Cons:
 - Space complexity is O(n) as extra space.
 - It is not very scalable.
@@ -33,6 +35,7 @@ Pros:
 
 - It is easy to understand and maintain.
 - It is much efficient compared to sorting approach.
+
 Cons:
 - It is limited number of characters set we defined as constant.
 
