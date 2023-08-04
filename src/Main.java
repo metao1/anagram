@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         /*
-         * cases for HashMapAnagramStrategy
+         * Creating test cases for the anagram checker
          * We create an array of Anagram objects, each with a name, expected result, and two strings to compare
          */
         AnagramTest[] anagramTests = new AnagramTest[]{
