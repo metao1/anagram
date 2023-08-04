@@ -1,3 +1,9 @@
+/**
+ * This class implements the AnagramChecker interface using array-based approach.
+ * <p>
+ * The array-based approach uses an array to store the frequency of each character in Unicode.
+ * </p>
+ */
 class ArrayAnagramChecker implements AnagramChecker {
 
     // The starting character in Unicode
