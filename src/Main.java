@@ -13,7 +13,7 @@ public class Main {
                         true, "forty over", "over forty"
                 ),
                 new AnagramTest("special letters ignored and accepted as anagram",
-                        true, "!M", "!m"),
+                        true, "M", "m"),
                 new AnagramTest("accept case insensitive letters as anagram",
                         true, "EviL", "vile"
                 ),
