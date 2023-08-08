@@ -10,7 +10,7 @@ import java.util.Set;
 class ArrayAnagramChecker implements AnagramChecker {
 
     // The starting character in Unicode
-    private static final char START_CHAR = 33;
+    private static final char START_CHAR = 33;// (exclamation mark)
 
     // The number of characters in Unicode plus numbers and punctuation
     private static final int CHARACTER_LIMIT = 280;//256(unicode) + 10 (0-9) + 14 (punctuation)
