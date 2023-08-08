@@ -40,21 +40,34 @@ Cons:
 - It is limited number of characters set we defined as constant.
 
 ## Implementation
+
 ✅ `As definition of anagram is limited to word, we can use an array based approach.`
 
 The `ArrayAnagramChecker` class implements the `AnagramChecker` interface.
-Inside `areAnagrams` method, we can pass two strings we want to check if they are anagrams of each other. 
+Inside `areAnagrams` method, we can pass two strings we want to check if they are anagrams of each other.
 The method will return `true` if the texts are anagrams of each other, and `false` otherwise.
 
 Here's an example that demonstrates how to implement the `AnagramChecker` using `ArrayAnagramChecker` class:
 
+## Usage
+
+Java 16 or above is required to run this project.
+
+Run the following command to compile and run the project:
+
+```shell
+ javac -d ./out/ ./src/*.java
+ java -cp ./out/ Main
+```
+
 ```java
-AnagramChecker anagramChecker = new ArrayAnagramChecker();
-boolean result = anagramChecker.areAnagrams("restful", "fluster");
-System.out.println(result); // true
+AnagramChecker anagramChecker=new ArrayAnagramChecker();
+        boolean result=anagramChecker.areAnagrams("restful","fluster");
+        System.out.println(result); // true
 ```
 
 ## Complexity
+
 The time complexity of the `areAnagrams` method is O(n), where n is the length of the strings.
 The space complexity of the `areAnagrams` method is O(1), since the size of the array is fixed.
 
