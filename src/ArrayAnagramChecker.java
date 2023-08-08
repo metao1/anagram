@@ -44,10 +44,9 @@ class ArrayAnagramChecker implements AnagramChecker {
 
         // Frequency of characters in Unicode
         int[] frequency = new int[CHARACTER_LIMIT];
-        char[] charactersText1 = normalizeText(text1).toCharArray();
+        char[] charactersText1 = text1.toCharArray();
         char[] charactersText2 = text2.toCharArray();
 
-        // Count the frequency of each character in text1 and text2
         countCharacterFrequency(charactersText1, frequency, 1);
         countCharacterFrequency(charactersText2, frequency, -1);
 
@@ -61,6 +60,7 @@ class ArrayAnagramChecker implements AnagramChecker {
         return true;
     }
 
+    // Remove accents and convert to lowercase
     private static String normalizeText(String text) {
         // Remove accents and convert to lowercase
         return Normalizer.normalize(text, Normalizer.Form.NFD)
@@ -68,6 +68,7 @@ class ArrayAnagramChecker implements AnagramChecker {
                 .toLowerCase();
     }
 
+    // Count the frequency of each character in the text
     private void countCharacterFrequency(char[] characters, int[] frequency, int increment) {
         for (char ch : characters) {
             if (!isValidCharacter(ch)) {
