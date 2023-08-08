@@ -1,6 +1,7 @@
 # AnagramChecker
 
 An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+One input can be multiple words or a sentence, including punctuation and numbers.
 
 ## Design
 The `AnagramChecker` interface provides a method for checking if two strings are anagrams of each other.
