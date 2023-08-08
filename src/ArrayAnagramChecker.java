@@ -12,7 +12,7 @@ class ArrayAnagramChecker implements AnagramChecker {
     // The starting character in Unicode
     private static final char START_CHAR = 33;
 
-    // The number of characters in Unicode plus numbers to support
+    // The number of characters in Unicode plus numbers and punctuation
     private static final int CHARACTER_LIMIT = 280;//256(unicode) + 10 (0-9) + 14 (punctuation)
 
     private static final Set<Integer> punctuationCodes = Set.of(
