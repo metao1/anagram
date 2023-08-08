@@ -44,6 +44,27 @@ public class Main {
                 new AnagramTest("strings with same characters but different cases are anagrams",
                         true, "Restful", "Fluster"
                 ),
+                new AnagramTest("strings with same characters but in different order are anagrams",
+                        true, "Tom Marvolo Riddle", "I am Lord Voldemort"
+                ),
+                new AnagramTest("string with different punctuations are anagrams",
+                        true, "The Morse Code", "Here come dots!"
+                ),
+                new AnagramTest("string with different punctuations complex form are anagrams",
+                        true, "Here come sider dots, come you may consider dots Here", "Here come siderdots, comeyo,mauy,Here!$considerdots"
+                ),
+                new AnagramTest("strings with same characters but different cases and punctuation are anagrams",
+                        true, "A Santa at NASA!", "NASA at a Santa"
+                ),
+                new AnagramTest("strings with same characters but different cases, punctuation, and whitespace are anagrams",
+                        true, "A Santa at NASA!", "NASA at a Santa "
+                ),
+                new AnagramTest("strings with same characters but different cases, punctuation, whitespace, and digits are anagrams",
+                        true, "A Santa at NASA! 123", "NASA at a Santa 321"
+                ),
+                new AnagramTest("strings with same characters but different cases, punctuation, whitespace, digits, and symbols are anagrams",
+                        true, "rich-chosen goofy cult! 123 $%^&*", "Rich-chosen 321 goofycult! *&^%$"
+                )
         };
 
         var anagramChecker = new ArrayAnagramChecker();

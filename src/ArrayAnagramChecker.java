@@ -7,11 +7,10 @@
 class ArrayAnagramChecker implements AnagramChecker {
 
     // The starting character in Unicode
-    private static final char START = 'a';
+    private static final char START_CHAR = 'a';
 
     // The number of characters in Unicode to support
     private static final int CHARACTER_LIMIT = 256;
-    private static final int SPACE_CHAR = 32;
 
     @Override
     public boolean areAnagrams(String text1, String text2) {
@@ -44,8 +43,8 @@ class ArrayAnagramChecker implements AnagramChecker {
 
     private void countCharacterFrequency(char[] characters, int[] frequency, int increment) {
         for (char character : characters) {
-            if (character != SPACE_CHAR) {
-                int index = character - START;
+            if (Character.isLetter(character)) {
+                int index = character - START_CHAR;
                 // If the character is uppercase, consider it as lowercase
                 if (index < 0) {
                     index += 32;
