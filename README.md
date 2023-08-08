@@ -17,7 +17,7 @@ Pros:
 - Space efficient as complexity is O(1).
 
 Cons:
-- It is not very efficient because sorting complexity is O(n log n).
+- It is not very efficient sorting complexity is O(n log n).
 
 ### Using hash table
 We use hash table to count the number of occurrences of each character in each string and compare the counts.
@@ -26,18 +26,23 @@ Pros:
 - It is much efficient compared to sorting approach.
 
 Cons:
+
 - Space complexity is O(n) as extra space.
+- Over engineering
 - It is not very scalable.
-- It is not very flexible.
 
 ### Using array based approach
 We use an array to count the number of occurrences of each character in each string and compare the counts.
 Pros:
 
 - It is easy to understand and maintain.
+- Space complexity is O(1)
+- Complexity is O(n)
 - It is much efficient compared to sorting approach.
 
 Cons:
+
+- It is limited to word as input.
 - It is limited number of characters set we defined as constant.
 
 ## Implementation
